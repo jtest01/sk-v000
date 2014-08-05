@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+<meta name="description" content="">
+<meta name="author" content="">
+<title>Panel</title>
+<!--Bootstrap core CSS-->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/bootstrap-custom.min.css" rel="stylesheet">
+<!--Fonts External CSS-->
+<link href='http://fonts.googleapis.com/css?family=Raleway:500' rel='stylesheet' type='text/css'>
+<!--UX styles for this file-->
+<link href="css/ux.css" rel="stylesheet">
+<!--Just for debugging purposes. Don't actually copy this line!-->
+<!--[if lt IE 9]><script src="../../docs-assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+<!--HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries-->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+<script>
+(function() {
+  if ("-ms-user-select" in document.documentElement.style && navigator.userAgent.match(/IEMobile\/10\.0/)) {
+    var msViewportStyle = document.createElement("style");
+    msViewportStyle.appendChild(
+      document.createTextNode("@-ms-viewport{width:auto!important}")
+    );
+    document.getElementsByTagName("head")[0].appendChild(msViewportStyle);
+  }
+})();
+</script>
+</head>
+<body>
+<!--Static Navigation-->
+<div class="navbar navbar-fixed-top navbar-default">
+  <div class="container">
+    <div class="row navbar-open">
+      <div class="col-xs-12 col-sm-12 col-md-3 col-lg-2">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="offcanvas" data-target=".navbar-offcanvas" data-canvas="body">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#"><img src="images/logo.png" alt=""/></a>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-8">
+        <ul class="main-nav">
+          <li class="active"><a href="#">Articles</a></li>
+          <li><a href="#">Directory</a></li>
+          <li><a href="#">Connect</a></li>
+        </ul>
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-3 col-lg-2">
+        <form role="search">
+          <div class="input-group">
+            <input type="text" class="form-control search-focus" placeholder="Search">
+            <div class="input-group-btn">
+              <button type="submit" class="btn btn-default">
+              <span class="glyphicon glyphicon-search"></span>
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="menu-bar">
+    <div class="container">
+      <div class="navbar-offcanvas offcanvas">
+        <a class="navmenu-brand" href="#"><img src="images/logo.png" alt=""/></a>
+        <div class="row">
+          <div class="col-xs-12 col-sm-9 col-md-9 col-lg-10">
+            <ul class="nav navbar-nav">
+              <li class="active menu-item-start"><a href="#">Item 1</a></li>
+              <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Item 2<b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Sub Item 1</a></li>
+                <li><a href="#">Sub Item 2</a></li>
+                <li><a href="#">Sub Item 3</a></li>
+                <li class="divider"></li>
+                <li class="dropdown-header">Dir 4</li>
+                <li><a href="#">Sub Item 4</a></li>
+                <li><a href="#">Sub Item 5</a></li>
+              </ul>
+              </li>
+              <li><a href="#">Item 3</a></li>
+              <li><a href="#">Item 4</a></li>
+              <li><a href="#">Item 5</a></li>
+            </ul>
+          </div>
+          <div class="col-xs-12 col-sm-3 col-md-3 col-lg-2 member-login">
+             Login <span class="glyphicon glyphicon-user"></span> | Register <span class="glyphicon glyphicon-ok"></span>
+          </div>
+        </div>
+      </div>
+      <ol class="breadcrumb">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Item 1</a></li>
+        <li class="active">Sub Item 2</li>
+      </ol>
+    </div>
+    <!--/.nav-collapse-->
+  </div>
+</div>
+<!--/container-->
+<!--Main Wrapper & Body Content-->
+<div class="container main-wrapper">
+  <div class="row">
+    <div class="col-xs-12 col-sm-7 col-md-7 col-lg-8">
+      <h1>News Landing</h1>
+      <div id="rotator" class="carousel slide" data-ride="carousel">
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+          <div class="item active">
+            <img src="http://placehold.it/760x400/cccccc/ffffff" alt="">
+            <div class="carousel-caption">
+              <h4><a href="#">Article 1</a></h4>
+              <p>
+                 Sub Title
+              </p>
+            </div>
+          </div>
+          <!-- End Item -->
+          <div class="item">
+            <img src="http://placehold.it/760x400/999999/cccccc" alt="">
+            <div class="carousel-caption">
+              <h4><a href="#">Article 2</a></h4>
+              <p>
+                 Sub Title
+              </p>
+            </div>
+          </div>
+          <!-- End Item -->
+          <div class="item">
+            <img src="http://placehold.it/760x400/dddddd/333333" alt="">
+            <div class="carousel-caption">
+              <h4><a href="#">Article 3</a></h4>
+              <p>
+                 Sub Title
+              </p>
+            </div>
+          </div>
+          <!-- End Item -->
+          <div class="item">
+            <img src="http://placehold.it/760x400/999999/cccccc" alt="">
+            <div class="carousel-caption">
+              <a href="#">News</a>
+              <p>
+                 Sub Title
+              </p>
+            </div>
+          </div>
+          <!-- End Item -->
+          <div class="item">
+            <img src="http://placehold.it/760x400/dddddd/333333" alt="">
+            <div class="carousel-caption">
+              <a href="#">News</a>
+              <p>
+                 Sub Title
+              </p>
+            </div>
+          </div>
+          <!-- End Item -->
+        </div>
+        <!-- End Carousel Inner -->
+        <ul class="list-group col-sm-4">
+          <li data-target="#rotator" data-slide-to="0" class="list-group-item active">
+          <h4>Article 1</h4>
+          </li>
+          <li data-target="#rotator" data-slide-to="1" class="list-group-item">
+          <h4>Article 2</h4>
+          </li>
+          <li data-target="#rotator" data-slide-to="2" class="list-group-item">
+          <h4>Article 3</h4>
+          </li>
+          <li data-target="#rotator" data-slide-to="3" class="list-group-item">
+          <h4>Article 4</h4>
+          </li>
+          <li data-target="#rotator" data-slide-to="4" class="list-group-item">
+          <h4>Article 5</h4>
+          </li>
+        </ul>
+        <!-- Controls -->
+        <div class="carousel-controls">
+          <a class="left carousel-control" href="#rotator" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left"></span>
+          </a>
+          <a class="right carousel-control" href="#rotator" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right"></span>
+          </a>
+        </div>
+      </div>
+      <!-- End Carousel -->
+      <br/><br/>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="article-data pull-left">
+            <div class="article-pic pull-left">
+              <a href="#">
+              <img src="http://placehold.it/122x122" alt="" class="img-responsive"/>
+              </a>
+            </div>
+            <div class="article-prfle pull-right">
+              <div class="art-title">
+                 Lorem ipsum dolor <span class="article-sub">By <span class="byname">Lorem Ipsum</span><span class="daysago">5 Days Ago</span></span>
+              </div>
+            </div>
+            <div class="bot-links">
+              <a href="#">Sit amet</a>
+              <a href="#">Amet</a>
+              <a href="#">Lorem</a>
+              <a href="#">Ipsum dolor</a>
+              <a href="#">Lorem</a>
+              <a href="#">Amet</a>
+              <a href="#">Sit amet</a>
+              <a href="#">Ipsum dolor</a>
+              <a href="#">Lorem</a>
+              <a href="#">Ipsum dolor sit</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="article-data pull-left">
+            <div class="article-pic pull-left">
+              <a href="#">
+              <img src="http://placehold.it/122x122" alt="" class="img-responsive"/>
+              </a>
+            </div>
+            <div class="article-prfle pull-right">
+              <div class="art-title">
+                 Lorem ipsum dolor <span class="article-sub">By <span class="byname">Lorem Ipsum</span><span class="daysago">5 Days Ago</span></span>
+              </div>
+            </div>
+            <div class="bot-links">
+              <a href="#">Sit amet</a>
+              <a href="#">Amet</a>
+              <a href="#">Lorem</a>
+              <a href="#">Ipsum dolor</a>
+              <a href="#">Lorem</a>
+              <a href="#">Amet</a>
+              <a href="#">Sit amet</a>
+              <a href="#">Ipsum dolor</a>
+              <a href="#">Lorem</a>
+              <a href="#">Ipsum dolor sit</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="article-data pull-left">
+            <div class="article-pic pull-left">
+              <a href="#">
+              <img src="http://placehold.it/122x122" alt="" class="img-responsive"/>
+              </a>
+            </div>
+            <div class="article-prfle pull-right">
+              <div class="art-title">
+                 Lorem ipsum dolor <span class="article-sub">By <span class="byname">Lorem Ipsum</span><span class="daysago">5 Days Ago</span></span>
+              </div>
+            </div>
+            <div class="bot-links">
+              <a href="#">Sit amet</a>
+              <a href="#">Amet</a>
+              <a href="#">Lorem</a>
+              <a href="#">Ipsum dolor</a>
+              <a href="#">Lorem</a>
+              <a href="#">Amet</a>
+              <a href="#">Sit amet</a>
+              <a href="#">Ipsum dolor</a>
+              <a href="#">Lorem</a>
+              <a href="#">Ipsum dolor sit</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br/>
+      <h2>Related Articles</h2>
+      <br/>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="article-data pull-left">
+            <div class="article-image pull-left">
+              <a href="#">
+              <img src="http://placehold.it/122x122" alt="" class="img-responsive"/>
+              </a>
+            </div>
+            <div class="article-share-prfle pull-right">
+              <div class="art-title">
+                 Lorem ipsum dolor <span class="article-share-sub">By <span class="byname">Lorem Ipsum</span><span class="daysago">5 Days Ago</span></span>
+              </div>
+            </div>
+            <div class="bot-links">
+              <a href="#">Sit amet</a>
+              <a href="#">Amet</a>
+              <a href="#">Lorem</a>
+              <a href="#">Ipsum dolor</a>
+              <a href="#">Lorem</a>
+              <a href="#">Amet</a>
+              <a href="#">Sit amet</a>
+              <a href="#">Ipsum dolor</a>
+              <a href="#">Lorem</a>
+              <a href="#">Ipsum dolor sit</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="article-data pull-left">
+            <div class="article-image pull-left">
+              <a href="#">
+              <img src="http://placehold.it/122x122" alt="" class="img-responsive"/>
+              </a>
+            </div>
+            <div class="article-share-prfle pull-right">
+              <div class="art-title">
+                 Lorem ipsum dolor <span class="article-share-sub">By <span class="byname">Lorem Ipsum</span><span class="daysago">5 Days Ago</span></span>
+              </div>
+            </div>
+            <div class="bot-links">
+              <a href="#">Sit amet</a>
+              <a href="#">Amet</a>
+              <a href="#">Lorem</a>
+              <a href="#">Ipsum dolor</a>
+              <a href="#">Lorem</a>
+              <a href="#">Amet</a>
+              <a href="#">Sit amet</a>
+              <a href="#">Ipsum dolor</a>
+              <a href="#">Lorem</a>
+              <a href="#">Ipsum dolor sit</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="article-data pull-left">
+            <div class="article-image pull-left">
+              <a href="#">
+              <img src="http://placehold.it/122x122" alt="" class="img-responsive"/>
+              </a>
+            </div>
+            <div class="article-share-prfle pull-right">
+              <div class="art-title">
+                 Lorem ipsum dolor <span class="article-share-sub">By <span class="byname">Lorem Ipsum</span><span class="daysago">5 Days Ago</span></span>
+              </div>
+            </div>
+            <div class="bot-links">
+              <a href="#">Sit amet</a>
+              <a href="#">Amet</a>
+              <a href="#">Lorem</a>
+              <a href="#">Ipsum dolor</a>
+              <a href="#">Lorem</a>
+              <a href="#">Amet</a>
+              <a href="#">Sit amet</a>
+              <a href="#">Ipsum dolor</a>
+              <a href="#">Lorem</a>
+              <a href="#">Ipsum dolor sit</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-xs-12 col-sm-5 col-md-5 col-lg-4">
+      <div class="sidebar-menu">
+        <h1>Directory</h1>
+        <div class="row sidebar-icons">
+          <div class="col-xs-6 col-sm-4 col-md-4 col-lg-4 icon">
+            <img src="images/printer_icon.jpg" alt=""/>
+          </div>
+          <div class="col-xs-6 col-sm-4 col-md-4 col-lg-4 icon">
+            <img src="images/scanner_icon.jpg" alt=""/>
+          </div>
+          <div class="col-xs-6 col-sm-4 col-md-4 col-lg-4 icon">
+            <img src="images/recycle_icon.jpg" alt=""/>
+          </div>
+          <div class="col-xs-6 col-sm-4 col-md-4 col-lg-4 icon">
+            <img src="images/consume_icon.jpg" alt=""/>
+          </div>
+          <div class="col-xs-6 col-sm-4 col-md-4 col-lg-4 icon">
+            <img src="images/software_icon.jpg" alt=""/>
+          </div>
+          <div class="col-xs-6 col-sm-4 col-md-4 col-lg-4 icon">
+            <img src="images/info_icon.jpg" alt=""/>
+          </div>
+          <div class="col-xs-6 col-sm-4 col-md-4 col-lg-4 icon">
+            <img src="images/sellers_icon.jpg" alt=""/>
+          </div>
+          <div class="col-xs-6 col-sm-4 col-md-4 col-lg-4 icon">
+            <img src="images/services_icon.jpg" alt=""/>
+          </div>
+          <div class="col-xs-6 col-sm-4 col-md-4 col-lg-4 icon">
+            <img src="images/manufacturers_icon.jpg" alt=""/>
+          </div>
+        </div>
+        <div class="sidebar-box-2">
+           320px
+        </div>
+        <div class="sidebar-box-3">
+           320px
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--/container-->
+<!--Footer-->
+<div class="footer-section">
+  <div class="container">
+    <footer>
+    <div class="row">
+      <div class="col-xs-4 col-sm-3 col-md-3 col-lg-3">
+        <p>
+           About Us
+        </p>
+        <p>
+           Advertising
+        </p>
+      </div>
+      <div class="col-xs-4 col-sm-3 col-md-3 col-lg-3">
+        <p>
+           Terms & Conditions
+        </p>
+        <p>
+           Privacy Policy
+        </p>
+        <p>
+           Acceptable Use
+        </p>
+      </div>
+      <div class="col-xs-4 col-sm-3 col-md-3 col-lg-3">
+        <p>
+           Contacts & Feedback
+        </p>
+        <p>
+           Submit a Listing
+        </p>
+        <br/><br/><br/>
+      </div>
+      <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 sk-social text-center">
+        <img src="images/facebook.png" alt=""/><img src="images/twitter.png" alt=""/><img src="images/instagram.png" alt=""/><img src="images/g+.png" alt=""/><img src="images/youtube.png" alt=""/>
+      </div>
+    </div>
+    <br/><br/>
+    <p class="text-center">
+       Copyright - 2014 <br/><br/><img class="footer-brand" src="images/logo.png" alt=""/><br/><br/>
+      <a href="#"><span class="glyphicon glyphicon-send"></span></a>
+    </p>
+    </footer>
+  </div>
+</div>
+<!--/container-->
+<!--Libraries-->
+<script src="js/jquery-1.10.2.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/bootstrap-custom.min.js"></script>
+<!--Triggers-->
+<script>
+$(window).bind("scroll", function() {
+    if ($(this).scrollTop() > 0) {
+        $(".breadcrumb").stop().fadeOut(15);
+     } else {
+        $(".breadcrumb").fadeIn();
+    }
+});
+</script>
+<script>
+$(document).ready(function(){
+  var clickEvent = false;
+  $('#rotator').carousel({
+    interval:   4000  
+  }).on('click', '.list-group li', function() {
+      clickEvent = true;
+      $('.list-group li').removeClass('active');
+      $(this).addClass('active');   
+  }).on('slid.bs.carousel', function(e) {
+    if(!clickEvent) {
+      var count = $('.list-group').children().length -1;
+      var current = $('.list-group li.active');
+      current.removeClass('active').next().addClass('active');
+      var id = parseInt(current.data('slide-to'));
+      if(count == id) {
+        $('.list-group li').first().addClass('active'); 
+      }
+    }
+    clickEvent = false;
+  });
+})
+$(window).load(function() {
+    var boxheight = $('#rotator .carousel-inner').innerHeight();
+    var itemlength = $('#rotator .item').length;
+    var triggerheight = Math.round(boxheight/itemlength+1);
+  $('#rotator .list-group-item').outerHeight(triggerheight);
+});
+</script>
+</body>
+</html>

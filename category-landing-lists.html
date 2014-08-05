@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+<meta name="description" content="">
+<meta name="author" content="">
+<title>Panel</title>
+<!--Bootstrap core CSS-->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/bootstrap-custom.min.css" rel="stylesheet">
+<!--Fonts External CSS-->
+<link href='http://fonts.googleapis.com/css?family=Raleway:500' rel='stylesheet' type='text/css'>
+<!--UX styles for this file-->
+<link href="css/ux.css" rel="stylesheet">
+<!--Just for debugging purposes. Don't actually copy this line!-->
+<!--[if lt IE 9]><script src="../../docs-assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+<!--HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries-->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+<script>
+(function() {
+  if ("-ms-user-select" in document.documentElement.style && navigator.userAgent.match(/IEMobile\/10\.0/)) {
+    var msViewportStyle = document.createElement("style");
+    msViewportStyle.appendChild(
+      document.createTextNode("@-ms-viewport{width:auto!important}")
+    );
+    document.getElementsByTagName("head")[0].appendChild(msViewportStyle);
+  }
+})();
+</script>
+</head>
+<body>
+<!--Static Navigation-->
+<div class="navbar navbar-fixed-top navbar-default">
+  <div class="container">
+    <div class="row navbar-open">
+      <div class="col-xs-12 col-sm-12 col-md-3 col-lg-2">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="offcanvas" data-target=".navbar-offcanvas" data-canvas="body">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#"><img src="images/logo.png" alt=""/></a>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-8">
+        <ul class="main-nav">
+          <li class="active"><a href="#">Articles</a></li>
+          <li><a href="#">Directory</a></li>
+          <li><a href="#">Connect</a></li>
+        </ul>
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-3 col-lg-2">
+        <form role="search">
+          <div class="input-group">
+            <input type="text" class="form-control search-focus" placeholder="Search">
+            <div class="input-group-btn">
+              <button type="submit" class="btn btn-default">
+              <span class="glyphicon glyphicon-search"></span>
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="menu-bar">
+    <div class="container">
+      <div class="navbar-offcanvas offcanvas">
+        <a class="navmenu-brand" href="#"><img src="images/logo.png" alt=""/></a>
+        <div class="row">
+          <div class="col-xs-12 col-sm-9 col-md-9 col-lg-10">
+            <ul class="nav navbar-nav">
+              <li class="active menu-item-start"><a href="#">Item 1</a></li>
+              <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Item 2<b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Sub Item 1</a></li>
+                <li><a href="#">Sub Item 2</a></li>
+                <li><a href="#">Sub Item 3</a></li>
+                <li class="divider"></li>
+                <li class="dropdown-header">Dir 4</li>
+                <li><a href="#">Sub Item 4</a></li>
+                <li><a href="#">Sub Item 5</a></li>
+              </ul>
+              </li>
+              <li><a href="#">Item 3</a></li>
+              <li><a href="#">Item 4</a></li>
+              <li><a href="#">Item 5</a></li>
+            </ul>
+          </div>
+          <div class="col-xs-12 col-sm-3 col-md-3 col-lg-2 member-login">
+             Login <span class="glyphicon glyphicon-user"></span> | Register <span class="glyphicon glyphicon-ok"></span>
+          </div>
+        </div>
+      </div>
+      <ol class="breadcrumb">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Item 1</a></li>
+        <li class="active">Sub Item 2</li>
+      </ol>
+    </div>
+    <!--/.nav-collapse-->
+  </div>
+</div>
+<!--/container-->
+<!--Main Wrapper & Body Content-->
+<div class="container main-wrapper">
+  <div class="row">
+    <div class="col-sm-3">
+      <div class="hero-widget well well-sm">
+        <div class="icon">
+          <i class="glyphicon glyphicon-import"></i>
+        </div>
+        <div class="text">
+          <h2>Output</h2>
+          <ul class="list-group">
+            <li class="list-group-item">Cras justo odio</li>
+            <li class="list-group-item">Dapibus ac facilisis in</li>
+            <li class="list-group-item">Morbi leo risus</li>
+            <li class="list-group-item">Porta ac consectetur ac</li>
+            <li class="list-group-item">Vestibulum at eros</li>
+          </ul>
+        </div>
+        <div class="options">
+          <a href="javascript:;" class="btn btn-primary btn-lg">View All</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-3">
+      <div class="hero-widget well well-sm">
+        <div class="icon">
+          <i class="glyphicon glyphicon-export"></i>
+        </div>
+        <div class="text">
+          <h2>Input</h2>
+          <ul class="list-group">
+            <li class="list-group-item">Cras justo odio</li>
+            <li class="list-group-item">Dapibus ac facilisis in</li>
+            <li class="list-group-item">Morbi leo risus</li>
+            <li class="list-group-item">Porta ac consectetur ac</li>
+            <li class="list-group-item">Vestibulum at eros</li>
+          </ul>
+        </div>
+        <div class="options">
+          <a href="javascript:;" class="btn btn-default btn-lg">View All</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-3">
+      <div class="hero-widget well well-sm">
+        <div class="icon">
+          <i class="glyphicon glyphicon-asterisk"></i>
+        </div>
+        <div class="text">
+          <h2>3d Related</h2>
+          <ul class="list-group">
+            <li class="list-group-item">Cras justo odio</li>
+            <li class="list-group-item">Dapibus ac facilisis in</li>
+            <li class="list-group-item">Morbi leo risus</li>
+            <li class="list-group-item">Porta ac consectetur ac</li>
+            <li class="list-group-item">Vestibulum at eros</li>
+          </ul>
+        </div>
+        <div class="options">
+          <a href="javascript:;" class="btn btn-default btn-lg"> View All</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-3">
+      <div class="hero-widget well well-sm">
+        <div class="icon">
+          <i class="glyphicon glyphicon-print"></i>
+        </div>
+        <div class="text">
+          <h2>3d Printers</h2>
+          <ul class="list-group">
+            <li class="list-group-item">Cras justo odio</li>
+            <li class="list-group-item">Dapibus ac facilisis in</li>
+            <li class="list-group-item">Morbi leo risus</li>
+            <li class="list-group-item">Porta ac consectetur ac</li>
+            <li class="list-group-item">Vestibulum at eros</li>
+          </ul>
+        </div>
+        <div class="options">
+          <a href="javascript:;" class="btn btn-default btn-lg"> View All</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-6">
+      <div class="hero-widget well well-sm">
+        <div class="icon">
+          <i class="glyphicon glyphicon-info-sign"></i>
+        </div>
+        <div class="text">
+          <h2>How to use the directory</h2>
+          <p>
+             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin porta et est varius vulputate. Vivamus a cursus justo. In sit amet dolor sit amet lorem facilisis adipiscing in at turpis. Quisque mollis non urna ut interdum. Aenean quis lorem blandit, adipiscing diam sed, sagittis sapien. Fusce in ornare dui.
+          </p>
+        </div>
+        <div class="options">
+          <a href="javascript:;" class="btn btn-primary btn-lg"> Button</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-3">
+      <div class="hero-widget well well-sm">
+        <div class="icon">
+          <i class="glyphicon glyphicon-search"></i>
+        </div>
+        <div class="text">
+          <h2>Input</h2>
+          <p>
+             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin porta et est varius vulputate. Vivamus a cursus justo.
+          </p>
+          <form role="search">
+            <div class="input-group">
+              <input type="text" class="form-control search-focus" placeholder="Search">
+              <div class="input-group-btn">
+                <button type="submit" class="btn btn-default">
+                <span class="glyphicon glyphicon-search"></span>
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="options">
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-3">
+      <div class="hero-widget well well-sm">
+        <div class="text">
+          <h2>Ad</h2>
+          <div style="height: 218px; background: red">
+          </div>
+        </div>
+        <div class="options">
+          <a href="javascript:;" class="btn btn-default btn-lg"> Button</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--/container-->
+<!--Footer-->
+<div class="footer-section">
+  <div class="container">
+    <footer>
+    <div class="row">
+      <div class="col-xs-4 col-sm-3 col-md-3 col-lg-3">
+        <p>
+           About Us
+        </p>
+        <p>
+           Advertising
+        </p>
+      </div>
+      <div class="col-xs-4 col-sm-3 col-md-3 col-lg-3">
+        <p>
+           Terms & Conditions
+        </p>
+        <p>
+           Privacy Policy
+        </p>
+        <p>
+           Acceptable Use
+        </p>
+      </div>
+      <div class="col-xs-4 col-sm-3 col-md-3 col-lg-3">
+        <p>
+           Contacts & Feedback
+        </p>
+        <p>
+           Submit a Listing
+        </p>
+        <br/><br/><br/>
+      </div>
+      <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 sk-social text-center">
+        <img src="images/facebook.png" alt=""/><img src="images/twitter.png" alt=""/><img src="images/instagram.png" alt=""/><img src="images/g+.png" alt=""/><img src="images/youtube.png" alt=""/>
+      </div>
+    </div>
+    <br/><br/>
+    <p class="text-center">
+       Copyright - 2014 <br/><br/><img class="footer-brand" src="images/logo.png" alt=""/><br/><br/>
+      <a href="#"><span class="glyphicon glyphicon-send"></span></a>
+    </p>
+    </footer>
+  </div>
+</div>
+<!--/container-->
+<!--Libraries-->
+<script src="js/jquery-1.10.2.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/bootstrap-custom.min.js"></script>
+<!--Triggers-->
+<script>
+$(window).bind("scroll", function() {
+    if ($(this).scrollTop() > 0) {
+        $(".breadcrumb").stop().fadeOut(15);
+     } else {
+        $(".breadcrumb").fadeIn();
+    }
+});
+</script>
+<script>(function(d,e,j,h,f,c,b){d.GoogleAnalyticsObject=f;d[f]=d[f]||function(){(d[f].q=d[f].q||[]).push(arguments)},d[f].l=1*new Date();c=e.createElement(j),b=e.getElementsByTagName(j)[0];c.async=1;c.src=h;b.parentNode.insertBefore(c,b)})(window,document,"script","//www.google-analytics.com/analytics.js","ga");ga("create","UA-36746286-1","iamkrupa.com");ga("send","pageview");
+</script>
+</body>
+</html>
